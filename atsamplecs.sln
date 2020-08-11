@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "atsamplecs", "atsamplecs.csproj", "{69E318B2-DCC2-472E-89E8-B5A6B34A6E61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69E318B2-DCC2-472E-89E8-B5A6B34A6E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69E318B2-DCC2-472E-89E8-B5A6B34A6E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69E318B2-DCC2-472E-89E8-B5A6B34A6E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69E318B2-DCC2-472E-89E8-B5A6B34A6E61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

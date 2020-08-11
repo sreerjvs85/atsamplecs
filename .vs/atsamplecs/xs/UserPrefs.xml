@@ -1,0 +1,62 @@
+﻿<Properties StartupConfiguration="{69E318B2-DCC2-472E-89E8-B5A6B34A6E61}|Default">
+  <MonoDevelop.Ide.ItemProperties.atsamplecs PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/test/at/steps/LoginTest.cs">
+    <Files>
+      <File FileName="src/test/at/steps/LoginTest.cs" Line="23" Column="48" />
+      <File FileName="src/test/at/resources/features/LoginFeature.feature" Line="9" Column="50" />
+      <File FileName="src/main/at/pageObjects/LandingPageObjects.cs" Line="24" Column="51" />
+      <File FileName="src/main/at/pageObjects/LoginPageObjects.cs" Line="22" Column="58" />
+      <File FileName="src/main/at/pageObjects/MyAtPageObjects.cs" Line="29" Column="2" />
+      <File FileName="src/main/at/CommonLibrary/WebElementFunctions.cs" Line="41" Column="54" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="atsamplecs" expanded="True">
+            <Node name="atsamplecs" expanded="True">
+              <Node name="src" expanded="True">
+                <Node name="main" expanded="True">
+                  <Node name="at" expanded="True">
+                    <Node name="CommonLibrary" expanded="True" />
+                    <Node name="pageObjects" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="test" expanded="True">
+                  <Node name="at" expanded="True">
+                    <Node name="resources" expanded="True">
+                      <Node name="features" expanded="True" />
+                    </Node>
+                    <Node name="steps" expanded="True">
+                      <Node name="LoginTest.cs" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="atsamplecs" expanded="True">
+            <Node name="atsamplecs" expanded="True">
+              <Node name="atsamplecs.Src.Test.At.Resources.Features" expanded="True">
+                <Node name="LoginToAtAndCaptureErrorMessageForFailureFeature" expanded="True">
+                  <Node name="LoginToAtAndCaptureErrorMessageForFailure(&quot;chrome&quot;,&quot;sreerjvs@gmail.com&quot;,&quot;R@vijaya7&quot;,null)" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/sreevathsan/Downloads/atsamplecs/src/test/at/steps/LoginTest.cs" relfile="src/test/at/steps/LoginTest.cs" line="28" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
