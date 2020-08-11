@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DotNetSeleniumExtras.PageObjects" Version="3.11.0" />
+    <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="3.12.0" />
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
     <PackageReference Include="nunit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.0" />
@@ -15,6 +18,21 @@
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="84.0.4147.3001" />
     <PackageReference Include="SpecFlow.NUnit" Version="3.3.74" />
     <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.3.74" />
+    <PackageReference Include="Selenium.Chrome.WebDriver" Version="83.0.0" />
+    <PackageReference Include="SpecFlow" Version="3.3.74" />
+    <PackageReference Include="SpecFlow.NUnit.Runners" Version="3.3.74" />
+    <PackageReference Include="gherkin" Version="6.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="src\test\at\steps\" />
+    <Folder Include="src\test\at\tests\" />
+    <ChromeDriverSrcPath Include="src\test\at\resources\drivers\chromedriver" />
+    <ChromeDriverTargetPath Include="bin\Debug\netcoreapp3.1" />
+  </ItemGroup>
+  <Target Name="BeforeBuild">
+    <Copy 
+      SourceFiles="@(ChromeDriverSrcPath)" 
+      DestinationFolder="@(ChromeDriverTargetPath)"/>
+  </Target>
 </Project>

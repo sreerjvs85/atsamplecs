@@ -36,6 +36,18 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "DotNetSeleniumExtras.PageObjects": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "DotNetSeleniumExtras.PageObjects.Core": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "DotNetSeleniumExtras.WaitHelpers": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.7.0, )"
@@ -43,6 +55,10 @@
             "NUnit3TestAdapter": {
               "target": "Package",
               "version": "[3.17.0, )"
+            },
+            "Selenium.Chrome.WebDriver": {
+              "target": "Package",
+              "version": "[83.0.0, )"
             },
             "Selenium.Support": {
               "target": "Package",
@@ -56,13 +72,25 @@
               "target": "Package",
               "version": "[84.0.4147.3001, )"
             },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.3.74, )"
+            },
             "SpecFlow.NUnit": {
+              "target": "Package",
+              "version": "[3.3.74, )"
+            },
+            "SpecFlow.NUnit.Runners": {
               "target": "Package",
               "version": "[3.3.74, )"
             },
             "SpecFlow.Tools.MsBuild.Generation": {
               "target": "Package",
               "version": "[3.3.74, )"
+            },
+            "gherkin": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "nunit": {
               "target": "Package",

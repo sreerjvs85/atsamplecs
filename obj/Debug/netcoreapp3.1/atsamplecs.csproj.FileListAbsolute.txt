@@ -11,6 +11,8 @@
 /Users/sreevathsan/Downloads/atsamplecs/bin/Debug/netcoreapp3.1/atsamplecs.pdb
 /Users/sreevathsan/Downloads/atsamplecs/bin/Debug/netcoreapp3.1/BoDi.dll
 /Users/sreevathsan/Downloads/atsamplecs/bin/Debug/netcoreapp3.1/Cucumber.Messages.dll
+/Users/sreevathsan/Downloads/atsamplecs/bin/Debug/netcoreapp3.1/SeleniumExtras.PageObjects.dll
+/Users/sreevathsan/Downloads/atsamplecs/bin/Debug/netcoreapp3.1/SeleniumExtras.WaitHelpers.dll
 /Users/sreevathsan/Downloads/atsamplecs/bin/Debug/netcoreapp3.1/Gherkin.dll
 /Users/sreevathsan/Downloads/atsamplecs/bin/Debug/netcoreapp3.1/Google.Protobuf.dll
 /Users/sreevathsan/Downloads/atsamplecs/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll
