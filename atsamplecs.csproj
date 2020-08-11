@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="src\main"/>
     <Folder Include="src\test\at\steps\" />
     <Folder Include="src\test\at\tests\" />
     <ChromeDriverSrcPath Include="src\test\at\resources\drivers\chromedriver" />
