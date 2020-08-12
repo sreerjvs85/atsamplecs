@@ -41,12 +41,12 @@ namespace atsamplecs.src.test.at.resources.steps
 
         [Then(@"If i get error message, capture it.")]
         public void ThenIfIGetErrorMessageCaptureIt(){
-            if(loginPageObjects.IsElementErrorMessageVisible()){
-                Console.WriteLine("Login failed");
-                Assert.Fail();
-            } else {
+            if (myAtPageObjects.GetTxtWelcomeMessage().Contains("Sreevathsan")) {
                 Console.WriteLine("Login Success");
                 Assert.Pass();
+            } else { 
+                Console.WriteLine("Login failed");
+                Assert.Fail();
             }
         }
 
