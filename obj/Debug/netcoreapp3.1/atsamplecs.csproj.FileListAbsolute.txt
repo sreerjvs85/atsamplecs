@@ -112,4 +112,3 @@
 /Users/sreevathsan/Downloads/atsamplecs/obj/Debug/netcoreapp3.1/atsamplecs.dll
 /Users/sreevathsan/Downloads/atsamplecs/obj/Debug/netcoreapp3.1/atsamplecs.pdb
 /Users/sreevathsan/Downloads/atsamplecs/obj/Debug/netcoreapp3.1/atsamplecs.genruntimeconfig.cache
-/Users/sreevathsan/Downloads/atsamplecs/obj/Debug/netcoreapp3.1/atsamplecs.csprojAssemblyReference.cache

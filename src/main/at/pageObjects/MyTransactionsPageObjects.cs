@@ -68,11 +68,13 @@ namespace atsamplecs.src.main.at.pageObjects
         }
 
         public void NavigateToPage(string page){
-            foreach (IWebElement element in GetNextPages()) {
+            IList<IWebElement> nextPages = GetNextPages();
+            for (int i = 1; i <= nextPages.Count; i ++) {
                 string nextPageNumber;
-                nextPageNumber = element.GetAttribute("inner-text");
+                nextPageNumber = nextPages[i-1].Text;
                 if (nextPageNumber.Equals(page.Substring(page.Length-1))){
-                    WebElementFunctions.ClickElement(element);
+                    WebElementFunctions.ClickElement(nextPages[i-1]);
+                    break;
                 }
             }
         }

@@ -75,10 +75,17 @@ namespace atsamplecs.Src.Test.At.Resources.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Login to at and capture error message for failure")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
         [NUnit.Framework.TestCaseAttribute("chrome", "sreerjvs@gmail.com", "R@vijaya7", null)]
         public virtual void LoginToAtAndCaptureErrorMessageForFailure(string browser, string user, string pass, string[] exampleTags)
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] @__tags = new string[] {
+                    "ignore"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("browser", browser);
             argumentsOfScenario.Add("user", user);
@@ -163,6 +170,55 @@ namespace atsamplecs.Src.Test.At.Resources.Features
 #line hidden
 #line 15
     testRunner.Then(string.Format("Verify the {0} details like tag on, tag off and hop balance", transaction), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Login to at in chrome browser with valid login credentials to check the transacti" +
+            "ons on different pages")]
+        [NUnit.Framework.TestCaseAttribute("second", "page2", null)]
+        [NUnit.Framework.TestCaseAttribute("third", "page3", null)]
+        public virtual void LoginToAtInChromeBrowserWithValidLoginCredentialsToCheckTheTransactionsOnDifferentPages(string transaction, string pages, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("transaction", transaction);
+            argumentsOfScenario.Add("pages", pages);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login to at in chrome browser with valid login credentials to check the transacti" +
+                    "ons on different pages", null, tagsOfScenario, argumentsOfScenario);
+#line 24
+  this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 25
+    testRunner.Given("I\'m on login screen of at using chrome", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 26
+    testRunner.When("I enter username sreerjvs@gmail.com, password R@vijaya7 and submit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 27
+    testRunner.Then("I click on View Transactions button to see all my previous travels", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 28
+    testRunner.Then(string.Format("Verify the {0} details like tag on, tag off and hop balance on {1}", transaction, pages), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

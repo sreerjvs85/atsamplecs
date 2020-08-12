@@ -67,9 +67,9 @@ namespace atsamplecs.src.main.at.CommonLibrary
 
         public static bool IsWebElementPresent(IWebElement element) {
             try{
-                WaitForElement().Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeSelected(element));
+                WaitForElement().Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(element));
                 return element.Displayed;
-            }catch (ElementNotVisibleException){
+            }catch (Exception){
                 TakesScreenshot(driver);
                 return false;
             }
@@ -86,16 +86,16 @@ namespace atsamplecs.src.main.at.CommonLibrary
 
         public static void TakesScreenshot(IWebDriver driver) {
             ITakesScreenshot screenshot = (ITakesScreenshot) driver;
-            Screenshot screenshot1 = screenshot.GetScreenshot();
+            Screenshot screenshot1 = new Screenshot(screenshot.GetScreenshot().AsBase64EncodedString);
             string destFilePath = SetFilePath() + "/" + DateTime.Now.Hour + DateTime.Now.Minute + DateTime.Now.Second;
             screenshot1.SaveAsFile(destFilePath, ScreenshotImageFormat.Jpeg);
 
         }
 
     private static string SetFilePath(){
-            string path = "../../../test/at/";
+            string path = "src/test/at/";
             string screenshotsFolder = path +"screenshots/";
-            string todayFolder = screenshotsFolder + DateTime.Today.Year +"/" + DateTime.Today.Month+"/"+DateTime.Today.Date;
+            string todayFolder = screenshotsFolder + DateTime.Today.Year +"/" + DateTime.Today.Month+"/"+DateTime.Today.Day;
             try {if (!Directory.Exists(todayFolder)) {
                 Directory.CreateDirectory(todayFolder);
             }} catch (Exception e){

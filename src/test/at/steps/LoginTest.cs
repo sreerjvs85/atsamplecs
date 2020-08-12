@@ -89,7 +89,7 @@ namespace atsamplecs.src.test.at.resources.steps
                 source = destination = str.Substring(autoStartIndex, str.Length-autoEndIndex-autoStartIndex);
                 hopBalance = Double.Parse(str.Substring(index+1));
                 index = str.IndexOf("$");
-                credit = Double.Parse(str.Substring(index+1, str.LastIndexOf("$")-1));
+                credit = Double.Parse(str.Substring(str.IndexOf("$") + 1, str.Length - str.LastIndexOf("$") - 1));
                   Assert.AreEqual(hopBalance, previousBalance);
             }
             if (source!= null && destination!= null) {
@@ -107,13 +107,19 @@ namespace atsamplecs.src.test.at.resources.steps
             }
         }
 
+        [Then("Verify the (.*) details like tag on, tag off and hop balance on (.*)")]
+        public void ThenVerifyTheDetailsLikeTagOnTagOffAndHopBalanceOn(string transaction, string page){
+            myTransactionsPageObjects.NavigateToPage(page);
+            ThenVerifyTheDetailsLikeTagOnTagOffAndHopBalance(transaction);
+        }
+
         [After]
         public void TearDown()
         {
-            Console.WriteLine("TC Stopped: "+ DateTime.Now);
-            Console.WriteLine("****************************");
             myAtPageObjects.ClickLinkLogout();
             WebElementFunctions.QuitDriver();
+            Console.WriteLine("TC Stopped: "+ DateTime.Now);
+            Console.WriteLine("****************************");
         }
 
     }
