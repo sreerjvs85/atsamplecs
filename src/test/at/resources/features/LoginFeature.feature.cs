@@ -123,6 +123,8 @@ namespace atsamplecs.Src.Test.At.Resources.Features
         [NUnit.Framework.TestCaseAttribute("first", null)]
         [NUnit.Framework.TestCaseAttribute("second", null)]
         [NUnit.Framework.TestCaseAttribute("third", null)]
+        [NUnit.Framework.TestCaseAttribute("fourth", null)]
+        [NUnit.Framework.TestCaseAttribute("fifth", null)]
         public virtual void LoginToAtInChromeBrowserWithValidLoginCredentialsToCheckTheTransactions(string transaction, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;

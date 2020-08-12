@@ -60,7 +60,7 @@ namespace atsamplecs.src.main.at.CommonLibrary
                 IWebElement element = WaitForElement().Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(by));
                 return element.Displayed;
             }catch (ElementNotVisibleException){
-                // TakesScreenshot();
+                TakesScreenshot(driver);
                 return false;
             }
         }
@@ -70,7 +70,7 @@ namespace atsamplecs.src.main.at.CommonLibrary
                 WaitForElement().Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeSelected(element));
                 return element.Displayed;
             }catch (ElementNotVisibleException){
-                // TakesScreenshot();
+                TakesScreenshot(driver);
                 return false;
             }
         }
@@ -78,13 +78,21 @@ namespace atsamplecs.src.main.at.CommonLibrary
             return new WebDriverWait(driver, TimeSpan.FromSeconds(waitForElementTimeout));
         }
 
-        public static void TakesScreenshot() {
-            Screenshot screenshot1 = new Screenshot("base64EncodedScreenshot");
-            string destFilePath = SetFilePath()+"/"+DateTime.Now.Hour+DateTime.Now.Minute+DateTime.Now.Second;
+        //public static void TakesScreenshot() {
+        //    Screenshot screenshot1 = new Screenshot("base64EncodedScreenshot");
+        //    string destFilePath = SetFilePath()+"/"+DateTime.Now.Hour+DateTime.Now.Minute+DateTime.Now.Second;
+        //    screenshot1.SaveAsFile(destFilePath, ScreenshotImageFormat.Jpeg);
+        //}
+
+        public static void TakesScreenshot(IWebDriver driver) {
+            ITakesScreenshot screenshot = (ITakesScreenshot) driver;
+            Screenshot screenshot1 = screenshot.GetScreenshot();
+            string destFilePath = SetFilePath() + "/" + DateTime.Now.Hour + DateTime.Now.Minute + DateTime.Now.Second;
             screenshot1.SaveAsFile(destFilePath, ScreenshotImageFormat.Jpeg);
+
         }
 
-        private static string SetFilePath(){
+    private static string SetFilePath(){
             string path = "../../../test/at/";
             string screenshotsFolder = path +"screenshots/";
             string todayFolder = screenshotsFolder + DateTime.Today.Year +"/" + DateTime.Today.Month+"/"+DateTime.Today.Date;
