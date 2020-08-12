@@ -75,8 +75,6 @@ namespace atsamplecs.Src.Test.At.Resources.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Login to at and capture error message for failure")]
-        [NUnit.Framework.TestCaseAttribute("chrome", "sreerjvs@gmail", "sreerjvs85", null)]
-        [NUnit.Framework.TestCaseAttribute("chrome", "sree21@yahoo", "sree2119", null)]
         [NUnit.Framework.TestCaseAttribute("chrome", "sreerjvs@gmail.com", "R@vijaya7", null)]
         public virtual void LoginToAtAndCaptureErrorMessageForFailure(string browser, string user, string pass, string[] exampleTags)
         {
@@ -114,6 +112,55 @@ namespace atsamplecs.Src.Test.At.Resources.Features
 #line hidden
 #line 6
     testRunner.Then("If i get error message, capture it.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Login to at in chrome browser with valid login credentials to check the transacti" +
+            "ons")]
+        [NUnit.Framework.TestCaseAttribute("first", null)]
+        [NUnit.Framework.TestCaseAttribute("second", null)]
+        [NUnit.Framework.TestCaseAttribute("third", null)]
+        public virtual void LoginToAtInChromeBrowserWithValidLoginCredentialsToCheckTheTransactions(string transaction, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("transaction", transaction);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login to at in chrome browser with valid login credentials to check the transacti" +
+                    "ons", null, tagsOfScenario, argumentsOfScenario);
+#line 11
+  this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 12
+    testRunner.Given("I\'m on login screen of at using chrome", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 13
+    testRunner.When("I enter username sreerjvs@gmail.com , password R@vijaya7 and submit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 14
+    testRunner.Then("I click on View Transactions button to see all my previous travels", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 15
+    testRunner.Then(string.Format("Verify the {0} details like tag on, tag off and hop balance", transaction), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

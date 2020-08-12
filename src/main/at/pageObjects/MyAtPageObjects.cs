@@ -15,10 +15,30 @@ namespace atsamplecs.src.main.at.pageObjects
             PageFactory.InitElements(driver, this);
         }
 
-        By TxtWelcomeMessage = By.ClassName("welcome_text");
+        By txtWelcomeMessage = By.ClassName("welcome_text");
+        By btnViewTransactions = By.LinkText("View transactions");
+        By txtMyAtBalance = By.XPath("//span[@class='default-hop-balance']");
+        By lnkLogout = By.LinkText("Log out");
 
         public string GetTxtWelcomeMessage() {
-            return WebElementFunctions.GetMessage(TxtWelcomeMessage);
+            return WebElementFunctions.GetMessage(txtWelcomeMessage);
+        }
+
+        public bool IsElementWelcomeMessageVisible(){
+            return WebElementFunctions.IsWebElementPresent(txtWelcomeMessage);
+        }
+
+        public string GetMyAtBalance () {
+            return WebElementFunctions.GetMessage(txtMyAtBalance);
+        }
+
+        public void ClickLinkLogout(){
+            WebElementFunctions.ClickElement(lnkLogout);
+        }
+
+        public MyTransactionsPageObjects ClickBtnViewTransactions(){
+            WebElementFunctions.ClickElement(btnViewTransactions);
+            return new MyTransactionsPageObjects(driver);
         }
 
     }

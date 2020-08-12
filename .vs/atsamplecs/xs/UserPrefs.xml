@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{69E318B2-DCC2-472E-89E8-B5A6B34A6E61}|Default">
   <MonoDevelop.Ide.ItemProperties.atsamplecs PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/test/at/steps/LoginTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/main/at/CommonLibrary/WebElementFunctions.cs">
     <Files>
-      <File FileName="src/test/at/steps/LoginTest.cs" Line="23" Column="48" />
-      <File FileName="src/test/at/resources/features/LoginFeature.feature" Line="9" Column="50" />
-      <File FileName="src/main/at/pageObjects/LandingPageObjects.cs" Line="24" Column="51" />
-      <File FileName="src/main/at/pageObjects/LoginPageObjects.cs" Line="22" Column="58" />
-      <File FileName="src/main/at/pageObjects/MyAtPageObjects.cs" Line="29" Column="2" />
-      <File FileName="src/main/at/CommonLibrary/WebElementFunctions.cs" Line="41" Column="54" />
+      <File FileName="src/main/at/CommonLibrary/WebElementFunctions.cs" Line="58" Column="28" />
+      <File FileName="src/test/at/resources/features/LoginFeature.feature" Line="15" Column="1" />
+      <File FileName="src/main/at/pageObjects/MyTransactionsPageObjects.cs" Line="45" Column="1" />
+      <File FileName="src/test/at/steps/LoginTest.cs" Line="44" Column="49" />
+      <File FileName="src/main/at/pageObjects/MyAtPageObjects.cs" Line="35" Column="1" />
+      <File FileName="src/main/at/pageObjects/LoginPageObjects.cs" Line="39" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +17,9 @@
               <Node name="src" expanded="True">
                 <Node name="main" expanded="True">
                   <Node name="at" expanded="True">
-                    <Node name="CommonLibrary" expanded="True" />
+                    <Node name="CommonLibrary" expanded="True">
+                      <Node name="WebElementFunctions.cs" selected="True" />
+                    </Node>
                     <Node name="pageObjects" expanded="True" />
                   </Node>
                 </Node>
@@ -26,14 +28,17 @@
                     <Node name="resources" expanded="True">
                       <Node name="features" expanded="True" />
                     </Node>
-                    <Node name="steps" expanded="True">
-                      <Node name="LoginTest.cs" selected="True" />
-                    </Node>
+                    <Node name="steps" expanded="True" />
                   </Node>
                 </Node>
               </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>nextPages</Value>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
@@ -54,9 +59,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/sreevathsan/Downloads/atsamplecs/src/test/at/steps/LoginTest.cs" relfile="src/test/at/steps/LoginTest.cs" line="28" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

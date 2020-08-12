@@ -14,7 +14,7 @@
         "outputPath": "/Users/sreevathsan/Downloads/atsamplecs/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sreevathsan/.nuget/NuGet/NuGet.Config"
+          "/Users/sreevathsan/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -56,10 +56,6 @@
               "target": "Package",
               "version": "[3.17.0, )"
             },
-            "Selenium.Chrome.WebDriver": {
-              "target": "Package",
-              "version": "[83.0.0, )"
-            },
             "Selenium.Support": {
               "target": "Package",
               "version": "[3.141.0, )"
@@ -71,6 +67,10 @@
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
               "version": "[84.0.4147.3001, )"
+            },
+            "Selenium.WebDriver.GeckoDriver": {
+              "target": "Package",
+              "version": "[0.27.0, )"
             },
             "SpecFlow": {
               "target": "Package",
@@ -87,6 +87,10 @@
             "SpecFlow.Tools.MsBuild.Generation": {
               "target": "Package",
               "version": "[3.3.74, )"
+            },
+            "WebDriverManager": {
+              "target": "Package",
+              "version": "[2.9.3, )"
             },
             "gherkin": {
               "target": "Package",

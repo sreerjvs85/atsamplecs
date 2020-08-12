@@ -35,7 +35,7 @@ namespace atsamplecs.src.main.at.pageObjects
             return new MyAtPageObjects(driver);
         }
 
-        public bool GetTxtErrorMessage(){
+        public bool IsElementErrorMessageVisible(){
             return WebElementFunctions.IsWebElementPresent(TxtErrorMessage);
         }
     

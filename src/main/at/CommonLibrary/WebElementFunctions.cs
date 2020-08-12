@@ -1,3 +1,6 @@
+using System.Linq;
+using System.Collections.ObjectModel;
+using System.Collections.Generic;
 using System.IO;
 using System;
 using OpenQA.Selenium.Support.UI;
@@ -11,9 +14,17 @@ namespace atsamplecs.src.main.at.CommonLibrary
     public class WebElementFunctions : BrowserFactory.BrowserFunctions
     {
 
+        public static double waitForElementTimeout = 30.0;
+
         public static void ClickElement(By by) {
             if (IsWebElementPresent(by)) {
                 GetWebElement(by).Click();
+            }
+        }
+
+        public static void ClickElement(IWebElement element) {
+            if (IsWebElementPresent(element)) {
+                element.Click();
             }
         }
 
@@ -27,6 +38,15 @@ namespace atsamplecs.src.main.at.CommonLibrary
             return driver.FindElement(by);
         }
 
+        public static IList<IWebElement> GetWebElements (By by){
+            if (IsWebElementPresent(by)) {
+                return driver.FindElements(by).ToArray();
+            } else
+            {
+                return null;
+            }
+        }
+
         public static String GetMessage(By by) {
             if (IsWebElementPresent(by)) {
                 return GetWebElement(by).GetAttribute("inner-text");
@@ -37,18 +57,25 @@ namespace atsamplecs.src.main.at.CommonLibrary
 
         public static bool IsWebElementPresent(By by) {
             try{
-                if (WaitForElement().Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(by)).Displayed) {
-                    return true;
-                }
-                return false;
+                IWebElement element = WaitForElement().Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(by));
+                return element.Displayed;
             }catch (ElementNotVisibleException){
                 // TakesScreenshot();
                 return false;
             }
         }
 
+        public static bool IsWebElementPresent(IWebElement element) {
+            try{
+                WaitForElement().Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeSelected(element));
+                return element.Displayed;
+            }catch (ElementNotVisibleException){
+                // TakesScreenshot();
+                return false;
+            }
+        }
         public static WebDriverWait WaitForElement(){
-            return new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+            return new WebDriverWait(driver, TimeSpan.FromSeconds(waitForElementTimeout));
         }
 
         public static void TakesScreenshot() {
