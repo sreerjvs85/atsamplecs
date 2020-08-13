@@ -127,6 +127,7 @@ namespace atsamplecs.Src.Test.At.Resources.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Login to at in chrome browser with valid login credentials to check the transacti" +
             "ons")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
         [NUnit.Framework.TestCaseAttribute("first", null)]
         [NUnit.Framework.TestCaseAttribute("second", null)]
         [NUnit.Framework.TestCaseAttribute("third", null)]
@@ -134,7 +135,13 @@ namespace atsamplecs.Src.Test.At.Resources.Features
         [NUnit.Framework.TestCaseAttribute("fifth", null)]
         public virtual void LoginToAtInChromeBrowserWithValidLoginCredentialsToCheckTheTransactions(string transaction, string[] exampleTags)
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] @__tags = new string[] {
+                    "ignore"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("transaction", transaction);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login to at in chrome browser with valid login credentials to check the transacti" +

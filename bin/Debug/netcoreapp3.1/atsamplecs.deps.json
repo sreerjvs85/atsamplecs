@@ -21,23 +21,11 @@
           "SpecFlow.NUnit": "3.3.74",
           "SpecFlow.NUnit.Runners": "3.3.74",
           "SpecFlow.Tools.MsBuild.Generation": "3.3.74",
-          "WebDriverManager": "2.9.3",
           "Gherkin": "6.0.0",
           "NUnit": "3.12.0"
         },
         "runtime": {
           "atsamplecs.dll": {}
-        }
-      },
-      "AngleSharp/0.14.0": {
-        "dependencies": {
-          "System.Text.Encoding.CodePages": "4.5.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/AngleSharp.dll": {
-            "assemblyVersion": "0.14.0.0",
-            "fileVersion": "0.14.0.0"
-          }
         }
       },
       "BoDi/1.4.1": {
@@ -563,14 +551,6 @@
       },
       "Selenium.WebDriver.ChromeDriver/84.0.4147.3001": {},
       "Selenium.WebDriver.GeckoDriver/0.27.0": {},
-      "SharpZipLib/1.2.0": {
-        "runtime": {
-          "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {
-            "assemblyVersion": "1.2.0.246",
-            "fileVersion": "1.2.0.246"
-          }
-        }
-      },
       "SpecFlow/3.3.74": {
         "dependencies": {
           "BoDi": "1.4.1",
@@ -975,7 +955,6 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.0": {},
       "System.Runtime.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -1202,12 +1181,6 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Text.Encoding.CodePages/4.5.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
-        }
-      },
       "System.Text.Encoding.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -1326,18 +1299,6 @@
             "fileVersion": "1.3.7.0"
           }
         }
-      },
-      "WebDriverManager/2.9.3": {
-        "dependencies": {
-          "AngleSharp": "0.14.0",
-          "SharpZipLib": "1.2.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/WebDriverManager.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
       }
     }
   },
@@ -1346,13 +1307,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "AngleSharp/0.14.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-34w9I7nyszfEYBY8g7T3B0AtWlOivNh+QoWc3KECRwbmcNyqWmb4huihtmpH2Ds7rIRRHMMPv9yfPBxxjBn03g==",
-      "path": "anglesharp/0.14.0",
-      "hashPath": "anglesharp.0.14.0.nupkg.sha512"
     },
     "BoDi/1.4.1": {
       "type": "package",
@@ -1690,13 +1644,6 @@
       "path": "selenium.webdriver.geckodriver/0.27.0",
       "hashPath": "selenium.webdriver.geckodriver.0.27.0.nupkg.sha512"
     },
-    "SharpZipLib/1.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-zvWa/L02JHNatdtjya6Swpudb2YEHaOLHL1eRrqpjm71iGRNUNONO5adUF/9CHbSJbzhELW1UoH4NGy7n7+3bQ==",
-      "path": "sharpziplib/1.2.0",
-      "hashPath": "sharpziplib.1.2.0.nupkg.sha512"
-    },
     "SpecFlow/3.3.74": {
       "type": "package",
       "serviceable": true,
@@ -1977,13 +1924,6 @@
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-YrzNWduCDHhUaSRBxHxL11UkM2fD6y8hITHis4/LbQZ6vj3vdRjoH3IoPWWC9uDXK2wHIqn+b5gv1Np/VKyM1g==",
-      "path": "system.runtime.compilerservices.unsafe/4.5.0",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512"
-    },
     "System.Runtime.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2117,13 +2057,6 @@
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
     },
-    "System.Text.Encoding.CodePages/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-S0wEUiKcLvRlkFUXca8uio1UQ5bYQzYgOmOKtCqaBQC3GR9AJjh43otcM32IGsAyvadFTaAMw9Irm6dS4Evfng==",
-      "path": "system.text.encoding.codepages/4.5.0",
-      "hashPath": "system.text.encoding.codepages.4.5.0.nupkg.sha512"
-    },
     "System.Text.Encoding.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2214,13 +2147,6 @@
       "sha512": "sha512-lMTNZWp6a6KGkgMc3rW41D3b0REb03fQycfb/2bNBpiUtsbGYYI/LrAhnX52vrHRe4ze7JxbtpWF1Y5ohdpipQ==",
       "path": "utf8json/1.3.7",
       "hashPath": "utf8json.1.3.7.nupkg.sha512"
-    },
-    "WebDriverManager/2.9.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-oi+b9bETbncBwpVJdpGKK7kxp8H/1DixIo8RzAX9togvJbneIxowtlRXICkDk8RmfhLQIfVa3X+QLKttBCOLag==",
-      "path": "webdrivermanager/2.9.3",
-      "hashPath": "webdrivermanager.2.9.3.nupkg.sha512"
     }
   }
 }

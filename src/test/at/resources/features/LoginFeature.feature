@@ -7,7 +7,7 @@ Feature: Login to at and capture error message for failure
     Examples:
       |browser  | user              | pass       |
       |chrome   |sreerjvs@gmail.com | R@vijaya7  |
-  
+  @ignore
   Scenario Outline: Login to at in chrome browser with valid login credentials to check the transactions
     Given I'm on login screen of at using chrome
     When I enter username sreerjvs@gmail.com , password R@vijaya7 and submit
@@ -28,5 +28,6 @@ Feature: Login to at and capture error message for failure
     Then Verify the <transaction> details like tag on, tag off and hop balance on <pages>
     Examples:
       | transaction | pages |
+      | first       | page1 |
       | second      | page2 |
       | third       | page3 |

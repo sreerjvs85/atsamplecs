@@ -14,7 +14,7 @@
         "outputPath": "/Users/sreevathsan/Downloads/atsamplecs/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sreevathsan/.config/NuGet/NuGet.Config"
+          "/Users/sreevathsan/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -87,10 +87,6 @@
             "SpecFlow.Tools.MsBuild.Generation": {
               "target": "Package",
               "version": "[3.3.74, )"
-            },
-            "WebDriverManager": {
-              "target": "Package",
-              "version": "[2.9.3, )"
             },
             "gherkin": {
               "target": "Package",

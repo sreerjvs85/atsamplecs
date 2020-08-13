@@ -22,10 +22,14 @@
     <PackageReference Include="SpecFlow.NUnit.Runners" Version="3.3.74" />
     <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.3.74" />
     <PackageReference Include="gherkin" Version="6.0.0" />
-    <PackageReference Include="WebDriverManager" Version="2.9.3" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\main" />
     <Folder Include="src\test\at\steps\" />
+  </ItemGroup>
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="src\test\at\resources\features\LoginFeature.feature">
+      <Visible>False</Visible>
+    </SpecFlowFeatureFiles>
   </ItemGroup>
 </Project>

@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "ekNwU4R+XwNjzaxD2cdDohnfgYxhgPVzUMZ7n1wj/nXsc2x6lNHWcV86fSYZC0JCfZghS2IZuPHdHryvNwSdyw==",
+  "dgSpecHash": "gPMpAz8RlfPP0ftvA6qWgKUotSteqNjdq9sYBD7OhoNtNamW3U2yx9Q+G3n5hQX4WVkxdzWnYbfp+Mddk/KJ/Q==",
   "success": true,
   "projectFilePath": "/Users/sreevathsan/Downloads/atsamplecs/atsamplecs.csproj",
   "expectedPackageFiles": [
-    "/Users/sreevathsan/.nuget/packages/anglesharp/0.14.0/anglesharp.0.14.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/bodi/1.4.1/bodi.1.4.1.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/cucumber.messages/6.0.1/cucumber.messages.6.0.1.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/dotnetseleniumextras.pageobjects/3.11.0/dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
@@ -53,7 +52,6 @@
     "/Users/sreevathsan/.nuget/packages/selenium.webdriver/3.141.0/selenium.webdriver.3.141.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/selenium.webdriver.chromedriver/84.0.4147.3001/selenium.webdriver.chromedriver.84.0.4147.3001.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/selenium.webdriver.geckodriver/0.27.0/selenium.webdriver.geckodriver.0.27.0.nupkg.sha512",
-    "/Users/sreevathsan/.nuget/packages/sharpziplib/1.2.0/sharpziplib.1.2.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/specflow/3.3.74/specflow.3.3.74.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/specflow.nunit/3.3.74/specflow.nunit.3.3.74.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/specflow.nunit.runners/3.3.74/specflow.nunit.runners.3.3.74.nupkg.sha512",
@@ -94,7 +92,6 @@
     "/Users/sreevathsan/.nuget/packages/system.reflection.typeextensions/4.3.0/system.reflection.typeextensions.4.3.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/system.resources.resourcemanager/4.3.0/system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
-    "/Users/sreevathsan/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.0/system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/system.runtime.extensions/4.3.0/system.runtime.extensions.4.3.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/system.runtime.handles/4.3.0/system.runtime.handles.4.3.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/system.runtime.interopservices/4.3.0/system.runtime.interopservices.4.3.0.nupkg.sha512",
@@ -114,7 +111,6 @@
     "/Users/sreevathsan/.nuget/packages/system.security.permissions/4.5.0/system.security.permissions.4.5.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/system.security.principal.windows/4.5.0/system.security.principal.windows.4.5.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
-    "/Users/sreevathsan/.nuget/packages/system.text.encoding.codepages/4.5.0/system.text.encoding.codepages.4.5.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/system.text.encoding.extensions/4.3.0/system.text.encoding.extensions.4.3.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/system.text.regularexpressions/4.3.0/system.text.regularexpressions.4.3.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/system.threading/4.3.0/system.threading.4.3.0.nupkg.sha512",
@@ -127,8 +123,7 @@
     "/Users/sreevathsan/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/system.xml.xpath/4.3.0/system.xml.xpath.4.3.0.nupkg.sha512",
     "/Users/sreevathsan/.nuget/packages/system.xml.xpath.xmldocument/4.3.0/system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
-    "/Users/sreevathsan/.nuget/packages/utf8json/1.3.7/utf8json.1.3.7.nupkg.sha512",
-    "/Users/sreevathsan/.nuget/packages/webdrivermanager/2.9.3/webdrivermanager.2.9.3.nupkg.sha512"
+    "/Users/sreevathsan/.nuget/packages/utf8json/1.3.7/utf8json.1.3.7.nupkg.sha512"
   ],
   "logs": []
 }
